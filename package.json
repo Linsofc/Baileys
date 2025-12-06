@@ -1,18 +1,18 @@
 {
-  "name": "baileys",
+  "name": "baileys-custom-linsofc",
   "type": "module",
-  "version": "7.0.0-rc.9",
-  "description": "A WebSockets library for interacting with WhatsApp Web",
+  "version": "1.0.0",
+  "description": "baileys remake by linsofc",
   "keywords": [
     "whatsapp",
     "automation"
   ],
-  "homepage": "https://github.com/WhiskeySockets/Baileys/",
+  "homepage": "https://github.com/Linsofc/Baileys.git",
   "repository": {
-    "url": "git@github.com:WhiskeySockets/Baileys.git"
+    "url": "git@github.com:Linsofc/Baileys.git"
   },
   "license": "MIT",
-  "author": "Rajeh Taher",
+  "author": "Linsofc",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
