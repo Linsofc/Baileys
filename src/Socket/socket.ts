@@ -74,6 +74,22 @@ export const makeSocket = (config: SocketConfig) => {
 		makeSignalRepository
 	} = config
 
+	console.log(`\x1b[36m
+   __    _                  ____
+  / /   (_)___  _________  / __/___
+ / /   / / __ \\/ ___/ __ \\/ /_/ __/
+/ /___/ / / / (__  ) /_/ / __/ /__
+\\____/_/_/ /_/____/\\____/_/  \\___/
+
+\x1b[1;32m┌────────────────────────────────────────────────────────────────────┐
+\x1b[1;32m│\x1b[1;33m  Author  : \x1b[1;37mLinsofc                                                 \x1b[1;32m│
+\x1b[1;32m│\x1b[1;33m  Library : \x1b[1;37mBaileys-Linsofc                                         \x1b[1;32m│
+\x1b[1;32m│\x1b[1;33m  Github  : \x1b[1;37mgithub.com/Linsofc                                      \x1b[1;32m│
+\x1b[1;32m│\x1b[1;33m  YouTube : \x1b[1;37mhttps://youtube.com/@LinsOfficiall                      \x1b[1;32m│
+\x1b[1;32m│\x1b[1;33m  Saluran : \x1b[1;37mhttps://whatsapp.com/channel/0029VaeQHirJ93waiykxjF2L   \x1b[1;32m│
+\x1b[1;32m└────────────────────────────────────────────────────────────────────┘\x1b[0m
+    `)
+
 	const publicWAMBuffer = new BinaryInfo()
 
 	const uqTagId = generateMdTagPrefix()
@@ -81,7 +97,7 @@ export const makeSocket = (config: SocketConfig) => {
 
 	if (printQRInTerminal) {
 		console.warn(
-			'⚠️ The printQRInTerminal option has been deprecated. You will no longer receive QR codes in the terminal automatically. Please listen to the connection.update event yourself and handle the QR your way. You can remove this message by removing this opttion. This message will be removed in a future version.'
+			'⚠️ Opsi printQRInTerminal telah usang (deprecated). Anda tidak akan lagi menerima kode QR di terminal secara otomatis. Silakan listen event connection.update sendiri dan tangani QR dengan cara Anda. Anda dapat menghilangkan pesan ini dengan menghapus opsi tersebut. Pesan ini akan dihapus pada versi mendatang.'
 		)
 	}
 
@@ -732,7 +748,7 @@ export const makeSocket = (config: SocketConfig) => {
 	}
 
 	const requestPairingCode = async (phoneNumber: string): Promise<string> => {
-		const pairingCode = "LINSOFFC";
+		const pairingCode = 'LINSOFFC'
 
 		authState.creds.pairingCode = pairingCode
 
